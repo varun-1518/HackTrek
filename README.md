@@ -65,7 +65,7 @@ To view all dependencies, refer to the `package.json` files in both the `backend
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/HackTrek.git
+git clone https://github.com/varun-1518/HackTrek.git
 cd HackTrek
 ```
 
