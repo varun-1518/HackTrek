@@ -1,0 +1,28 @@
+Confidential Document
+
+Title: Internal Security Guidelines
+
+Classification: Top Secret
+
+This document contains proprietary and sensitive information regarding the security infrastructure of [Your Company Name]. Unauthorized access, sharing, or reproduction is strictly prohibited.
+
+1. Password Policies:
+   - Use strong passwords with at least 12 characters, including letters, numbers, and symbols.
+   - Change passwords every 90 days.
+
+2. Data Encryption:
+   - All sensitive data must be encrypted using AES-256.
+
+3. Network Security:
+   - Firewalls and intrusion detection systems (IDS) are mandatory for all network traffic.
+
+4. Employee Responsibilities:
+   - Report any suspicious activity to the security team immediately.
+   - Use company-approved devices and software only.
+
+5. Access Control:
+   - Only authorized personnel can access this document. 
+
+For further clarification, contact the Security Operations Team at security@example.com.
+
+Unauthorized access to this document will be prosecuted to the fullest extent of the law.

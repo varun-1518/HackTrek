@@ -1,0 +1,138 @@
+/* Global styles for body */
+body {
+  font-family: 'Roboto', sans-serif; /* Modern font for a clean look */
+  background-color: #0d0d0d; /* Rich black for the background */
+  margin: 0;
+  padding: 0;
+  color: #ffffff; /* Bright white for all text */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5rem;
+  color: #ffffff; /* Pure white for the title */
+  font-weight: bold;
+  letter-spacing: 1px; /* Adds sophistication */
+  text-transform: uppercase; /* Gives a modern feel */
+}
+
+/* Title styling */
+ body h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.5rem;
+  color: #ffffff; /* Pure white for the title */
+  font-weight: bold;
+  letter-spacing: 1px; /* Adds sophistication */
+  text-transform: uppercase; /* Gives a modern feel */
+}
+
+/* Scoreboard styling (Challenges Completed Box) */
+.scoreboard {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px auto;
+  color: #ffffff; /* White text */
+  font-weight: bold;
+  background: linear-gradient(135deg, #044d9f, #56cfb5); /* Cool blue-green gradient */
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 6px 12px rgba(80, 227, 194, 0.4);
+}
+
+/* Layout of the challenge list */
+.challenge-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+/* Card styling */
+.challenge-card {
+  background: #1a1a1a; /* Deep grey for contrast */
+  border: 1px solid #333333; /* Subtle border for definition */
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  width: 270px;
+  text-align: center;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.challenge-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Card title styling */
+.challenge-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #ffffff; /* White for the titles */
+  letter-spacing: 0.5px;
+}
+
+/* Card description styling */
+.challenge-card p {
+  font-size: 1.1rem;
+  color: #e0e0e0; /* Light grey for descriptions */
+  margin-bottom: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Styling for the links (remove underlines and improve hover effect) */
+.challenge-card a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+  background: #4a90e2; /* Cool blue button */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.challenge-card a:hover {
+  background-color: #50e3c2; /* Greenish-blue highlight */
+  color: #0d0d0d; /* Dark text on hover */
+}
+
+/* Mark as Done Button */
+.mark-done-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4caf50; /* Green button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mark-done-btn:disabled {
+  background-color: #333333; /* Muted grey for disabled state */
+  cursor: not-allowed;
+}
+
+.mark-done-btn:hover:not(:disabled) {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .challenge-list {
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

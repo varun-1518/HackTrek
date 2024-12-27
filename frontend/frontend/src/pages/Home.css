@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #121212; /* Deep black background */
+  color: #e0e0e0; /* Light gray for text */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right, #1e88e5, #1565c0); /* Cool blue gradient */
+  color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  border-radius: 0 0 12px 12px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffca28; /* Gold highlight */
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to bottom, #101010, #1a1a1d, #242428);
+  color: #ffffff;
+  text-align: center;
+  padding: 120px 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color:#42a5f5;
+  letter-spacing: 2px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero-section .cta-button {
+  display: inline-block;
+  background: linear-gradient(to right, #ffca28, #fdd835); /* Gold gradient */
+  color: #121212; /* Black text for contrast */
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-section .cta-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 202, 40, 0.5);
+}
+
+/* About Section */
+.about {
+  background-color: #1d1d1d; /* Dark gray */
+  padding: 60px 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #42a5f5; /* Highlighted blue */
+  text-align: center;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #bdbdbd; /* Light gray for contrast */
+  line-height: 1.8;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.about li {
+  font-size: 1.2rem;
+  color: #bdbdbd; /* Light gray for contrast */
+  line-height: 1.8;
+  margin: 15px 0;
+  
+}
+.about ul li::marker {
+  color: #42a5f5;
+  
+}
+
+/* Features Section */
+.features {
+  background: #1d1d1d; /* Dark gray */
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #1e88e5;
+}
+
+.feature {
+  background: #2a2a2a; /* Darker gray */
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 15px; /* Add gap between feature cards */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+}
+
+.feature h3 {
+  font-size: 1.6rem;
+  color: #42a5f5;
+} 
+
+/* User Icon Container */
+.user-icon-container {
+  position: relative; /* Needed for positioning the user menu */
+  display: inline-block; /* Ensures it stays in-line with other elements */
+  cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
+
+/* User Icon */
+.user-icon-container svg {
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.user-icon-container:hover svg {
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+/* User Icon Container */
+.user-icon-container {
+  position: fixed; /* Position fixed at the bottom-left of the page */
+  bottom: 20px; /* 20px from the bottom */
+  left: 20px; /* 20px from the left */
+  display: inline-block; /* Ensures it stays in-line with other elements */
+  cursor: pointer; /* Changes the cursor to indicate it's clickable */
+  z-index: 1000; /* Ensures the icon stays above other content */
+}
+
+/* User Icon */
+.user-icon-container svg {
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.user-icon-container:hover svg {
+  transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+/* User Menu (Initially Hidden) */
+.user-menu {
+  position: absolute;
+  bottom: 50px; /* Positions the menu above the icon */
+  left: 0; /* Aligns to the left side of the icon */
+  background-color: #2a2a2a; /* Darker background */
+  color: #fff; /* White text for contrast */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 200px; /* Set width of the dropdown */
+  z-index: 1000; /* Ensures it appears above other elements */
+  opacity: 0; /* Hidden by default */
+  transform: translateY(-10px); /* Starts off slightly above the icon */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* On hover over the user icon, show the user menu */
+.user-icon-container:hover .user-menu {
+  opacity: 1; /* Shows the menu */
+  transform: translateY(0); /* Moves the menu to its correct position */
+}
+
+/* User Menu Details */
+.user-menu p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #ccc; /* Light gray for text */
+  line-height: 1.5;
+}
+
+/* Logout Button */
+.user-menu button {
+  background-color: #1e88e5; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make button take the full width */
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Adds spacing between text and button */
+}
+
+.user-menu button:hover {
+  background-color: #1565c0; /* Darker blue on hover */
+}
+
+.user-menu button:focus {
+  outline: none; /* Removes focus outline */
+}
+
+
+/* Call-to-Action Section */
+.cta-section {
+  text-align: center;
+  background: linear-gradient(to top, #1e88e5, #42a5f5);
+  color: white;
+  padding: 60px 20px;
+  margin: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.cta-section .cta-button {
+  background: linear-gradient(to right, #ffca28, #fdd835);
+  color: #121212;
+}
+
+.footer {
+  background: linear-gradient(to right, #1e88e5, #1565c0);
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  padding: 10px; /* Adds some space around the content */
+  height: 50px; /* Adjust the height as needed */
+}
+

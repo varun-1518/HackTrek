@@ -1,0 +1,92 @@
+/* Container styling */
+.sql-injection-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; /* Dark background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Box styling */
+.sql-injection-box {
+  background: #1e1e1e; /* Darker box background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adjusted shadow for dark theme */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Input field styling */
+.sql-injection-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #333; /* Dark border */
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #2a2a2a; /* Input background */
+  color: #f4f4f4; /* Light text color */
+}
+
+/* Button styling */
+.sql-injection-button {
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.sql-injection-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.sql-injection-button:disabled,
+.sql-injection-button.loading {
+  background-color: #555; /* Disabled state */
+  cursor: not-allowed;
+}
+
+/* Result container styling */
+.sql-injection-result {
+  margin-top: 20px;
+}
+
+.sql-injection-result-box {
+  background: #2a2a2a; /* Result background */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); /* Adjusted shadow */
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 14px;
+  color: #f4f4f4; /* Light text */
+}
+
+.sql-injection-box h1{
+  font-size: 30px;
+}
+/* Typography */
+h1 {
+  font-size: 18px;
+  color: #f4f4f4; /* Light heading color */
+}
+
+p {
+  color: #bbb; /* Lighter paragraph text */
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f4f4f4; /* Light subheading color */
+}

@@ -1,0 +1,75 @@
+/* Products Page Styles */
+.products-page {
+  padding: 20px;
+  text-align: center;
+  background-color: #121212; /* Deep black background */
+  color: #ffffff; /* White text for visibility */
+}
+
+.products-page h1 {
+  color: #ffffff; /* Ensure the heading OUR PRODUCTS PAGE is white */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #444; /* Darker border for better contrast */
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  background-color: #1d1d1d; /* Dark gray background */
+  color: #ffffff; /* White text for visibility */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Slightly lift the card */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Subtle shadow for 3D effect */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px; /* Slightly round the image corners */
+}
+
+.product-card h3 {
+  color: #ffffff; /* Ensure product name is visible */
+  margin: 10px 0;
+  font-size: 1.2rem; /* Adjust font size for readability */
+}
+
+.product-card .price {
+  color: #ffca28; /* Gold color for better visibility of the price */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  color: #bdbdbd; /* Light gray for description visibility */
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.product-card button {
+  padding: 10px 15px;
+  background-color: #1e88e5; /* Cool blue for contrast */
+  color: #ffffff; /* White text for visibility */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #1565c0; /* Darker blue for hover effect */
+  box-shadow: 0 4px 8px rgba(30, 136, 229, 0.5); /* Add hover shadow for buttons */
+}

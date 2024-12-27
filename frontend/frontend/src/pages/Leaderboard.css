@@ -1,0 +1,27 @@
+.leaderboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .leaderboard-table th,
+  .leaderboard-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .leaderboard-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .leaderboard-table td {
+    text-align: center;
+  }
+  

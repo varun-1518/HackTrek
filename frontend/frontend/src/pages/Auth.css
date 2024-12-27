@@ -1,0 +1,93 @@
+/* Container for Authentication */
+.auth-container {
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 30px;
+  background: #ffffff;  /* White background */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;  /* Modern font */
+}
+
+/* Form Structure */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.auth-form h1 {
+  color: #000000; /* Ensure the heading OUR PRODUCTS PAGE is white */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.auth-form input {
+  width: 100%;
+  margin: 12px 0;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: #007bff;  /* Highlight input border on focus */
+  outline: none;
+}
+
+/* Button Styling */
+.auth-button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+}
+
+.auth-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+/* Success/Info Message */
+.auth-message {
+  color: #28a745;  /* Green color for success messages */
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+/* Error Messages */
+.auth-message.error {
+  color: #dc3545;  /* Red color for error messages */
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 600px) {
+  .auth-container {
+    margin-top: 100px;
+    padding: 20px;
+  }
+
+  .auth-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .auth-form input {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

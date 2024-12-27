@@ -1,0 +1,190 @@
+/* Cart Page Styles */
+.cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Black theme background */
+  color: #ffffff; /* White text for visibility */
+}
+
+.cart-container h1 {
+  color: #ffffff; /* Ensure the heading OUR PRODUCTS PAGE is white */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #444; /* Dark border for contrast */
+  border-radius: 5px;
+  background-color: #1d1d1d; /* Dark gray background */
+  font-size: 16px;
+  color: #ffffff; /* White text for visibility */
+}
+
+.cart-item span {
+  flex: 1; /* This ensures product name, quantity, and price are spaced evenly */
+  margin-right: 15px;
+  text-align: left;
+}
+
+.cart-item .product-name {
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cart-item .price {
+  font-weight: bold;
+  color: #ffca28; /* Gold color for better visibility */
+  margin-left: 10px;
+}
+
+.cart-item .quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-item input[type="number"] {
+  width: 60px; /* Adjust width of quantity input to make it more compact */
+  margin-right: 10px;
+  padding: 5px;
+  background-color: #1d1d1d; /* Dark background */
+  color: #ffffff; /* White text */
+  border: 1px solid #444; /* Border for contrast */
+  border-radius: 4px;
+}
+
+.remove-btn,
+.buy-now-btn,
+.submit-order-btn {
+  background-color: #1e88e5; /* Cool blue for contrast */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-btn:hover,
+.buy-now-btn:hover,
+.submit-order-btn:hover {
+  background-color: #1565c0; /* Darker blue for hover effect */
+}
+
+/* Add some space between the cart items and form */
+.cart-form-container {
+  margin-top: 30px;
+}
+
+/* Shipping Address Form */
+.shipping-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.shipping-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff; /* White text for visibility */
+}
+
+.shipping-form input {
+  margin-bottom: 15px;
+  padding: 8px;
+  background-color: #1d1d1d; /* Dark background */
+  color: #ffffff; /* White text */
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+/* Payment Method Form */
+.payment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff; /* White text for visibility */
+}
+
+.payment-form input {
+  margin-bottom: 15px;
+  padding: 8px;
+  background-color: #1d1d1d; /* Dark background */
+  color: #ffffff; /* White text */
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.payment-form input[type="number"] {
+  width: 100%;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/* Address and Card Container */
+.address-card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.address-card-container .shipping-form,
+.address-card-container .payment-form {
+  width: 48%;
+}
+
+@media (max-width: 768px) {
+  .address-card-container .shipping-form,
+  .address-card-container .payment-form {
+    width: 100%;
+  }
+}
+
+.checkout-form {
+  margin-top: 20px;
+}
+
+.checkout-form h2 {
+  margin-bottom: 10px;
+  color: #ffffff; /* White text for visibility */
+}
+
+.checkout-form input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #1d1d1d; /* Dark background */
+  color: #ffffff; /* White text */
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.checkout-form .submit-order-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.checkout-form .submit-order-btn:hover {
+  background-color: #1565c0;
+}
