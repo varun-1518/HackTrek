@@ -69,7 +69,11 @@ cd HackTrek
    MONGO_URI=<your_mongo_connection_string>
    PORT=5000
    ```
-4. Start the backend server:
+4. Create a uploads folder in backend directory .The uploads folder is required to store files uploaded during challenges. Create the folder in the backend directory:
+   ```bash
+   mkdir uploads
+   ```
+5. Start the backend server:
    ```bash
    npm start
    ```
