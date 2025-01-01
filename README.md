@@ -120,7 +120,7 @@ We encourage contributions to improve the platform and feedback for new challeng
 ---
 
 ## **License**
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
